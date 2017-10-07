@@ -1,21 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import ApolloClient from 'apollo-client';
+import { ApolloProvider }  from 'react-apollo';
+import Root from './client/Root';
 
-export default class App extends React.Component {
+class App extends Component {
+  createClient() {
+    return new ApolloClient({
+      dataIdFromObject: o => o.id
+    });
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <ApolloProvider client={this.createClient()}>
+        <Root />
+      </ApolloProvider>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
