@@ -1,0 +1,18 @@
+{
+  "name": "app-auth",
+  "version": "0.0.0",
+  "description": "Authorization with React Native and GraphQL",
+  "author": "svetayefremova",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "dependencies": {
+    "apollo-client": "^1.9.3",
+    "axios": "^0.16.2",
+    "expo": "^21.0.0",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.4.2",
+    "react": "16.0.0-alpha.12",
+    "react-apollo": "^1.4.16",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.2.tar.gz"
+  }
+}
