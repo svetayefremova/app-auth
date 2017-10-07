@@ -13,10 +13,4 @@ const RouteConfig = {
   Dashboard: { screen: Dashboard }
 };
 
-const TabConfig = {
-  tabBarOptions: {
-    activeTintColor: '#ee6e73'
-  }
-};
-
-export default StackNavigator(RouteConfig, TabConfig)
+export default StackNavigator(RouteConfig)

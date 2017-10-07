@@ -27,6 +27,6 @@ const styles = {
   button: {
     backgroundColor: Colors.tintColor,
     marginVertical: 10,
-    width: 200
+    width: 200,
   }
 };
