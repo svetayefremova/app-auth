@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { FormLabel, FormInput, FormValidationMessage, Button } from 'react-native-elements';
-import Colors from '../constants/colors';
+
+import Styles from '../constants/styles';
 
 class AuthForm extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      email: 'test@test.com',
-      password: 'test'
+      email: '',
+      password: ''
     }
   }
 
@@ -19,11 +20,11 @@ class AuthForm extends Component {
 
   render() {
     return (
-      <View style={styles.form}>
+      <View style={{alignItems: 'center'}}>
         <FormLabel>Email</FormLabel>
-        <FormInput containerStyle={styles.input} onChangeText={email => this.setState({email})} />
+        <FormInput containerStyle={Styles.input} onChangeText={email => this.setState({email})} />
         <FormLabel>Password</FormLabel>
-        <FormInput containerStyle={styles.input} onChangeText={password => this.setState({password})} />
+        <FormInput containerStyle={Styles.input} onChangeText={password => this.setState({password})} />
 
         {
           this.props.errors.map(error => (
@@ -34,9 +35,9 @@ class AuthForm extends Component {
         }
 
         <Button
-          title="Submit"
+          title={"Submit".toUpperCase()}
           onPress={this.onSubmit}
-          buttonStyle={styles.button}
+          buttonStyle={[Styles.button, { marginTop: 48 }]}
         />
       </View>
     )
@@ -44,17 +45,3 @@ class AuthForm extends Component {
 }
 
 export default AuthForm;
-
-const styles = {
-  form: {
-    alignItems: 'center',
-  },
-  input: {
-    width: 300,
-  },
-  button: {
-    backgroundColor: Colors.tintColor,
-    marginVertical: 10,
-    width: 200,
-  }
-};
