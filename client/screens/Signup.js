@@ -7,6 +7,10 @@ import Layout from '../components/Layout';
 import AuthForm from '../components/AuthForm';
 
 class Signup extends Component {
+  static navigationOptions = {
+    title: 'Signup',
+  };
+
   constructor(props) {
     super(props);
 

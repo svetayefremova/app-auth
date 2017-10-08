@@ -1,5 +1,5 @@
 const tintColor = '#ee6e73';
-const tintUnderlay = '#8BC942';
+const tintUnderlay = '#d66367';
 const white = '#fff';
 
 export default {

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import { graphql } from 'react-apollo';
-import signupMutation from '../mutations/Signup';
+import loginMutation from '../mutations/Login';
 import currentUserQuery from '../queries/CurrentUser';
 
 import AuthForm from '../components/AuthForm';
 
 class Login extends Component {
+  static navigationOptions = {
+    title: 'Login',
+  };
+
   constructor(props) {
     super(props);
 
@@ -20,6 +24,7 @@ class Login extends Component {
   }
 
   onSubmitForm = ({ email, password }) => {
+    console.log('submit');
     this.props.mutate({
       variables: {
         email,
@@ -45,5 +50,5 @@ class Login extends Component {
 }
 
 export default graphql(currentUserQuery)(
-  graphql(signupMutation)(Login)
+  graphql(loginMutation)(Login)
 );

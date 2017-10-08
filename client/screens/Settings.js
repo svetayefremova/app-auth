@@ -3,16 +3,16 @@ import { View, Text } from 'react-native';
 
 import Layout from '../components/Layout';
 
-class Dashboard extends Component {
+class Settings extends Component {
   static navigationOptions = {
-    title: 'Dashboard',
+    title: 'Settings',
   };
 
   render() {
     return(
-      <Layout><Text>Dashboard</Text></Layout>
+      <Layout><Text>Settings</Text></Layout>
     )
   }
 }
 
-export default Dashboard;
+export default Settings;
