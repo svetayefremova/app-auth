@@ -4,7 +4,7 @@ import { ApolloProvider }  from 'react-apollo';
 import Root from './client/Root';
 
 const networkInterface = createNetworkInterface({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'http://localhost:3000/graphql',
   opts: {
     credentials: 'same-origin'
   }
