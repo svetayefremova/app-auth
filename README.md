@@ -27,4 +27,4 @@ $ npm run server
 - use client with EXPO app
 
 
-### inspired by Stephen Grider
+inspired by Stephen Grider
