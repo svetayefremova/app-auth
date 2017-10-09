@@ -6,7 +6,7 @@
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "dev": "nodemon index.js --ignore main"
+    "server": "nodemon index.js --ignore main"
   },
   "dependencies": {
     "apollo-client": "^1.9.3",
