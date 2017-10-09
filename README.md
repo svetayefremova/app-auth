@@ -1,4 +1,4 @@
-### React Native Authorization
+# React Native Authorization
 
 Full Stack React Native Authorization using GraphQL and Apollo
 
@@ -27,4 +27,4 @@ $ npm run server
 - use client with EXPO app
 
 
-# inspired by Stephen Grider
+### inspired by Stephen Grider
